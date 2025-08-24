@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Directory</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin: 10px 0 5px;
+    }
+    p {
+      margin: 5px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏢 Employee Directory</h1>
+    <p>Company: Tech Solutions Pvt Ltd</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Employee">
+      <h3>Ravi Kumar</h3>
+      <p>Software Engineer</p>
+      <p>📧 ravi.kumar@example.com</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Employee">
+      <h3>Ananya Shetty</h3>
+      <p>Project Manager</p>
+      <p>📧 ananya.shetty@example.com</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Employee">
+      <h3>Rahul Singh</h3>
+      <p>UI/UX Designer</p>
+      <p>📧 rahul.singh@example.com</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Employee">
+      <h3>Kavya M</h3>
+      <p>HR Executive</p>
+      <p>📧 kavya.m@example.com</p>
+    </div>
+  </div>
+</body>
+</html>
